@@ -1,7 +1,7 @@
 <?php 
 include "db.php";
 
-$sql="select * from weirdnews where rating = 0";
+$sql="select * from weirdnews where rating = -1";
 $result = mysql_query($sql) or die("Query failed $sql ".mysql_error());
 $num=mysql_num_rows($result);
 
